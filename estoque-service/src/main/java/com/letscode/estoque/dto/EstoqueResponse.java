@@ -11,5 +11,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class EstoqueResponse {
     private String codigoDeBarras;
-    private boolean emEstoque;
+    private Integer quantidade;
+    private boolean isEmEstoque;
 }

@@ -17,7 +17,7 @@ public class EstoqueController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<EstoqueResponse> emEstoque(@RequestParam List<String> codigoDeBarras){
-        return estoqueService.emEstoque(codigoDeBarras);
+    public List<EstoqueResponse> emEstoque(@RequestParam List<String> codigoDeBarras, @RequestParam List<Integer> quantidade){
+        return estoqueService.emEstoque(codigoDeBarras,quantidade);
     }
 }

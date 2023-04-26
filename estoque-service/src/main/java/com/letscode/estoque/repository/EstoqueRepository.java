@@ -8,4 +8,6 @@ import java.util.Optional;
 
 public interface EstoqueRepository extends JpaRepository<Estoque, Long> {
     List<Estoque> findByCodigoDeBarrasIn(List<String> codigoDeBarras);
+
+    Optional<Estoque> findByCodigoDeBarras(String codigo);
 }

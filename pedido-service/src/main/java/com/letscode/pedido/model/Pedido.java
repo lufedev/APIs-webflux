@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -19,6 +20,9 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String numeroPedido;
+
+    private LocalDateTime dataPedido;
+    private StatusPedido status;
     @OneToMany(cascade = CascadeType.ALL)
     private List<ListaItensPedidos> listaItensPedidos;
 }

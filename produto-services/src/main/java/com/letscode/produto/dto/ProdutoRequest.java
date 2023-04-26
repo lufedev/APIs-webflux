@@ -13,6 +13,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class ProdutoRequest {
     private String nome;
+    private String codigoDeBarras;
     private String descricao;
     private BigDecimal valor;
 }

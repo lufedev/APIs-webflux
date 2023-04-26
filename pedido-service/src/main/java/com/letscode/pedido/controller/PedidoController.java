@@ -17,6 +17,6 @@ public class PedidoController {
     @ResponseStatus(HttpStatus.CREATED)
     public String realizarPedido(@RequestBody PedidoRequest pedidoRequest){
         pedidoService.realizarPedido(pedidoRequest);
-        return "Pedido Realizado!";
+        return "Transação Realizada!";
     }
 }
