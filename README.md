@@ -7,7 +7,7 @@ Eureka: http://localhost:8080/eureka/web
 
 - POST: http://localhost:8080/api/pedido 
 Exemplo de POST para realizar uma compra
-'''
+```
 {
     "listaItensPedidosDtoList":[
         {
@@ -16,7 +16,7 @@ Exemplo de POST para realizar uma compra
         }
     ]
 }
-'''
+```
 
 - GET: http://localhost:8080/api/produto
 
